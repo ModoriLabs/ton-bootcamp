@@ -1,0 +1,24 @@
+{
+  "name": "ton-bootcamp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ModoriLabs/ton-bootcamp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ModoriLabs/ton-bootcamp/issues"
+  },
+  "homepage": "https://github.com/ModoriLabs/ton-bootcamp#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "node-telegram-bot-api": "^0.61.0"
+  }
+}
