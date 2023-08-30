@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ModoriLabs/ton-bootcamp#readme",
   "description": "",
   "dependencies": {
+    "dedent": "^1.5.1",
     "dotenv": "^16.3.1",
     "node-telegram-bot-api": "^0.61.0"
   }
