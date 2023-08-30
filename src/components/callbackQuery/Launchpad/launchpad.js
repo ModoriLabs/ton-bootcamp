@@ -8,7 +8,29 @@ function launchpad(bot, chat) {
     id,
     dedent`
       Hello world!
-    `
+    `,
+    {
+      reply_markup: {
+        inline_keyboard: [
+          [
+            {
+              text: 'external link',
+              web_app: {
+                url: 'https://telegram-web-app-interface.vercel.app',
+              },
+            },
+          ],
+          [
+            {
+              text: 'add an ad?',
+              web_app: {
+                url: 'https://telegram-web-app-interface.vercel.app/insert_ad',
+              },
+            },
+          ],
+        ],
+      },
+    }
   );
 }
 
