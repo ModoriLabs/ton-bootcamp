@@ -29,20 +29,20 @@ bot.on('message', (query) => {
   }
 });
 
-bot.on('callback_query', (query) => {
-  if (!query.message) return;
-  console.log('Query received: %o', query);
+// bot.on('callback_query', (query) => {
+//   if (!query.message) return;
+//   console.log('Query received: %o', query);
 
-  const {
-    message: { chat },
-    data,
-  } = query;
+//   const {
+//     message: { chat },
+//     data,
+//   } = query;
 
-  if (data.startsWith(CallbackQuery.LAUNCHPAD)) {
-    launchpad(bot, chat);
-    return;
-  }
-});
+//   if (data.startsWith(CallbackQuery.LAUNCHPAD)) {
+//     launchpad(bot, chat);
+//     return;
+//   }
+// });
 
 bot.on('polling_error', (error) => {
   console.log(error.code);

@@ -16,7 +16,7 @@ function launchpad(bot, chat) {
             {
               text: 'external link',
               web_app: {
-                url: 'https://telegram-web-app-interface.vercel.app',
+                url: 'https://forty-shrimps-deny.loca.lt/',
               },
             },
           ],
