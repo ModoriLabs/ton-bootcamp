@@ -1,5 +1,10 @@
-const { CallbackQuery } = require('../../enum/CallbackQuery');
+const { CallbackQuery } = require("../../enum/CallbackQuery");
 const dedent = require(`dedent`);
+
+const baseLink =
+  process.env.ENV === "DEV"
+    ? process.env.LOCAL_TUNNEL_URL
+    : "https://telegram-web-app-interface.vercel.app";
 
 function index(bot, chat) {
   const { id, first_name } = chat;
@@ -16,23 +21,23 @@ function index(bot, chat) {
         inline_keyboard: [
           [
             {
-              text: 'Main page',
+              text: "Main page",
               web_app: {
-                url: 'https://telegram-web-app-interface.vercel.app',
+                url: baseLink,
               },
             },
           ],
           [
             {
-              text: 'view ad!',
+              text: "view ad!",
               web_app: {
-                url: 'https://telegram-web-app-interface.vercel.app/view_ad/0',
+                url: baseLink + "/view_ad/0",
               },
             },
             {
-              text: 'upload ad',
+              text: "upload ad",
               web_app: {
-                url: 'https://telegram-web-app-interface.vercel.app/insert_ad',
+                url: baseLink + "/insert_ad",
               },
             },
           ],
